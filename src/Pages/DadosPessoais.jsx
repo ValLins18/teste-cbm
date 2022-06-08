@@ -4,8 +4,10 @@ import '../Components/Buttons.css'
 import GreyButton from "../Components/GreyButton";
 import RedButton from "../Components/RedButton";
 import Input from "../Components/Input";
+import InputMask from "react-input-mask";
 
 export default class DadosPessoais extends Component {
+    
     render(){
         return(
             <div className="backplane">
@@ -36,11 +38,11 @@ export default class DadosPessoais extends Component {
                 </label>
                 <label htmlFor="cpf">
                     CPF:<br/>
-                    <Input type="text" name="cpf"/>
+                    <InputMask className="input-mask" mask="999.999.999-99" maskChar=""/>
                 </label>
                 <label htmlFor="data">
                     Data de Nascimento:<br/>
-                    <Input type="text" name="data"/>
+                    <InputMask className="input-mask" mask="99/99/9999" maskChar=""/>
                 </label>
                 <label htmlFor="signo">
                     Signo:<br/>
@@ -56,7 +58,7 @@ export default class DadosPessoais extends Component {
                 </label>
                 <label htmlFor="telefone">
                     telefone:<br/>
-                    <Input type="text" name="telefone"/>
+                    <InputMask className="input-mask" mask="(99)9 9999-9999" maskChar=""/>
                 </label>
                 </form>
                 <footer>

@@ -7,7 +7,8 @@ import Experiencia from './Pages/Experiencia';
 function App() {
   return (
     <div className="App center">
-      <Experiencia/>
+      {/* <Experiencia/> */}
+      <DadosPessoais/>
     </div>
   );
 }
