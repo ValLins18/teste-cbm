@@ -1,0 +1,14 @@
+.input-group{
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+}
+input[type=text]{
+    width: 100%;
+}
